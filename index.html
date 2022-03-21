@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <H1>Calculator</H1>
+
+
+
+<script>
+
+    var n1=prompt("ingresa el primer numero");
+
+   
+    var n2=prompt("ingresa el segundo numero");
+
+    if(!isNaN(n1)&& !isNaN(n2)){
+
+
+    
+
+    var operacion=prompt("ingresa la operacion a ejecutar");
+    var resultado;
+
+    if (operacion=="suma" || operacion=="SUMA" ){
+
+        resultado=parseInt(n1)+parseInt(n2);
+
+    }
+
+    else if(operacion=="resta" || operacion=="RESTA"){
+
+        resultado=parseInt(n1)-parseInt(n2);
+
+    }
+
+    else if(operacion=="multiplicación" || operacion=="multiplicacion" || operacion=="MULTIPLICACION"){
+
+resultado=parseInt(n1)*parseInt(n2);
+
+}
+
+else if(operacion=="division" || operacion=="división" || operacion=="DIVISION"){
+
+resultado=parseInt(n1)/parseInt(n2);
+
+}
+
+
+/*
+    document.write(typeof(n1));
+    document.write("<br>");
+    document.write(typeof(n2));
+    document.write("<br>");
+*/
+    document.write("el resultado es " + resultado);
+
+
+
+    
+
+    }else{
+
+        if(typeof(n1)=="string" || typeof(n2)=="string"){
+
+        document.write("<h1>")
+        document.write("no ingresaste valores validos")
+        document.write("</h1>")
+        document.write("<h2>")
+        document.write("!!!!!!!ERROR!!!!!!!!!!")
+        document.write("</h2>")
+
+        }
+    }
+</script>
+</head>
+<body id="calcu">
+   <!--
+    <form name="form1" action="" method="post" id="formCalcu">
+        <table id="cuadro" widt="25%" id="micalculadora">
+            <tr>
+                <td>operacion</td>
+                <td><label for="textname"></label>
+                <input type="text" id="textname" name="textname">
+                </td>
+            </tr>
+            <tr>
+                <td>valor1</td>
+                <td><label for="valorn1"></label>
+                <input type="number" id="valorn1" name="valorn1">
+                </td>
+            </tr>
+            <tr>
+                <td>valor2</td>
+                <td><label for="valorn2"></label>
+                <input type="number" id="valorn2" name="valorn1">
+                </td>
+            </tr>
+           
+
+
+        </table>
+
+
+    </form>
+    
+
+ -->
+    
+</body>
+</html>
